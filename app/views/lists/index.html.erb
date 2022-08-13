@@ -1,0 +1,22 @@
+<p>Book was successfully created</p>
+
+<% @lists.each do |list| %>
+
+<p>
+    <strong>Title:</strong>
+    <span><%= list.title %></span>
+</p>
+
+<P>
+    <strong>Body:</strong>
+    <span><%= list.body %></span>
+</P>
+
+
+<% end %>
+
+<div class=com >
+<a href="/lists/new">Edit</a>
+ | 
+<a href="/lists/new">Back</a>
+</div>
