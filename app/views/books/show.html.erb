@@ -1,0 +1,20 @@
+<p>Book was successfully created.</p>
+
+<p>
+    <strong>Title:</strong>
+    <span><%= @book.title %></span>
+</p>
+
+<P>
+    <strong>Body:</strong>
+    <span><%= @book.body %></span>
+</P>
+
+
+
+<div class=com >
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<!--routesの真ん中と（@コントローラー.必要なID）-->
+ | 
+<%= link_to "Back", books_path %>
+</div>
